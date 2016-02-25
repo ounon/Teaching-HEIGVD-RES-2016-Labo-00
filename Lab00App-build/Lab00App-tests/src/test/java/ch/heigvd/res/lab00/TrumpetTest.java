@@ -15,7 +15,7 @@ import org.junit.Test;
  */
 public class TrumpetTest {
 
-  /*
+  
   @Test
   public void thereShouldBeAnIInstrumentInterfaceAndATrumpetClass() {
     IInstrument trumpet = new Trumpet();
@@ -51,6 +51,37 @@ public class TrumpetTest {
     String color = trumpet.getColor();
     Assert.assertEquals("golden", color);
   }
-  */
+  
  
+}
+
+interface IInstrument{
+    public int getSoundVolume();
+    public String getColor();
+    public String play();
+}
+
+class Trumpet implements IInstrument{
+    public String getColor(){
+        return "golden";
+    }
+    public int getSoundVolume(){
+        return 5;
+    }
+    
+    public String play(){
+        return "pouet";
+    }
+}
+
+class Flute implements IInstrument{
+    public int getSoundVolume(){
+        return 1;
+    }
+    public String getColor(){
+        return "golden";
+    }
+    public String play(){
+        return "pouet";
+    }
 }
