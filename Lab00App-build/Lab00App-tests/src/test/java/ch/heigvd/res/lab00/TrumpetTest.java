@@ -54,34 +54,3 @@ public class TrumpetTest {
   
  
 }
-
-interface IInstrument{
-    public int getSoundVolume();
-    public String getColor();
-    public String play();
-}
-
-class Trumpet implements IInstrument{
-    public String getColor(){
-        return "golden";
-    }
-    public int getSoundVolume(){
-        return 5;
-    }
-    
-    public String play(){
-        return "pouet";
-    }
-}
-
-class Flute implements IInstrument{
-    public int getSoundVolume(){
-        return 1;
-    }
-    public String getColor(){
-        return "golden";
-    }
-    public String play(){
-        return "pouet";
-    }
-}
